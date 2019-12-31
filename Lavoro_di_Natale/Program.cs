@@ -9,8 +9,8 @@ namespace Lavoro_di_Natale
             static void Main(string[] args)
             {
                 int a = int.MaxValue;
-                Console.WriteLine(a);
-                Console.WriteLine(a+1);
+                Console.WriteLine(a); //2^31 perchè il valore massimo di un int è 2^31-1 (un bit è per il segno) uguale 2.147.483.647;
+                Console.WriteLine(a+1); //qua il codice trova un errore perchè il numero a va in overflow e quindi stampa l'opposto aggiungendo 1 = -2^31;
                 int b = -128;
                 int c = -b; 
                 Console.WriteLine(Convert.ToString(b, 2)); 
