@@ -20,7 +20,7 @@ namespace Lavoro_di_Natale
                 value = ~value + 1; //NOT
                 //value = value + 1;
                 somma = somma + value;
-                Console.WriteLine($"{value} e {somma}");
+                Console.WriteLine($"{value} e {somma}"); 
                 long number = 55555;
                 Console.WriteLine(Convert.ToString(number, 2));
                 short number1 = (short)number;
