@@ -15,7 +15,7 @@ namespace Lavoro_di_Natale
             int b = -128; //viene assegnato un valore alla variabile b;
             int c = -b;  //alla variabile c viene assegnato il valore dell'opposto della variabile b;
             Console.WriteLine(Convert.ToString(b, 2)); //si converte in binario il valore della variabile b;
-            Console.WriteLine(Convert.ToString(c, 2)); //si converte in binario il valore della variabile c;
+            Console.WriteLine(Convert.ToString(c, 2)); //si converte in binario il valore della variabile c; 
             int value = 31;
             int somma = value;
             value = ~value + 1; //NOT
