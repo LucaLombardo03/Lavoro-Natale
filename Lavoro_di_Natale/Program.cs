@@ -24,9 +24,10 @@ namespace Lavoro_di_Natale
             somma = somma + value;
             Console.WriteLine($"{value} è il valore opposto da quello che ha inserito e {somma} è la somma tra il valore inserito e l'opposto"); 
             long number = 55555;
-            Console.WriteLine(Convert.ToString(number, 2));
-            short number1 = (short)number;
-            Console.WriteLine(number1);
+            Console.WriteLine(Convert.ToString(number, 2)); //si converte in binario il valore della variabile number
+            short number1 = (short)number; //il valore number si trasforma da long a short
+            Console.WriteLine(number1); //si stampa il valore di number1, il valore è sbagliato perchè il numero long è 55555 mentre le variabili short vanno da da -32,768 a 32,767. 
+                                        //Il codice trova un'eccezione e quindi va in overflow e stampa -9981. In pratica 55555-32768 = 22.788‬ - 32768 = 9981 che si trasforma im negativo. 
             Console.ReadLine();
         }
     }
